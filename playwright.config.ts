@@ -23,8 +23,12 @@ export default defineConfig({
   // No retries: a flaky test fails the build instead of hiding behind a second attempt.
   retries: 0,
 
-  reporter: process.env.CI
-    ? [['blob'], ['github']]
+  rreporter: process.env.CI
+    ? [
+        ['blob'],
+        ['github'],
+        ['junit', { outputFile: `reports/${process.env.REPORT_NAME ?? 'playwright'}.xml` }],
+      ]
     : [['list'], ['html', { open: 'never' }]],
 
   use: {
