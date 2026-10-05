@@ -48,3 +48,25 @@ Co na `demo/failing-unit` stało się z testami API i UI:
 ## Pomiary z kolejnych zadań
 
 Tu dopisujesz pomiary i odpowiedzi z kolejnych zadań, pod nagłówkiem z numerem zadania.
+
+ZADANIE 09
+Czas pipeline: 3m 14s
+UI tests: 2m 49s
+
+4 workery:
+Czas pipeline: 1m 16s
+UI tests: 56s
+
+Shardowanie (4):
+Czas pipeline: 1m 26s
+UI tests: 39s
+
+Shardowanie (8):
+Czas pipeline: 1m
+UI tests: 34s
+
+ZADANIE 10
+suma testów:
+najdłuższy shard:
+czas pipeline:
+
