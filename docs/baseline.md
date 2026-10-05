@@ -48,3 +48,10 @@ Co na `demo/failing-unit` stało się z testami API i UI:
 ## Pomiary z kolejnych zadań
 
 Tu dopisujesz pomiary i odpowiedzi z kolejnych zadań, pod nagłówkiem z numerem zadania.
+
+ZADANIE 02
+| Krok | Czas 1 | Czas 2 |
+| Install dependencies | 6s | 5s |
+| Install Playwright browsers | 11s | 0s |
+
+Czas do informacji o błędzie lintu: 28s
