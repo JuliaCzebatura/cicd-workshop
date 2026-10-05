@@ -162,7 +162,8 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
-      - run: npx playwright test --project=ui-chromium --shard=${{ matrix.shard }}/4 ${{ env.GREP }}
+      - run: npm ci
+
       - name: Resolve Playwright version
         id: pw
         run: echo "version=$(node -p "require('@playwright/test/package.json').version")" >> "$GITHUB_OUTPUT"
