@@ -23,7 +23,7 @@ export default defineConfig({
   // No retries: a flaky test fails the build instead of hiding behind a second attempt.
   retries: 0,
 
-  rreporter: process.env.CI
+  reporter: process.env.CI
     ? [
         ['blob'],
         ['github'],
